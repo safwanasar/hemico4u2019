@@ -1,0 +1,66 @@
+page-registeragent .toolbar-background-md {
+  background-color: #7965ff;
+}
+
+page-registeragent .toolbar-title-md {
+  color: #fff;
+}
+
+page-registeragent p {
+  color: #777;
+  font-size: 15px;
+}
+
+page-registeragent .scroll-content {
+  background-color: #F5F5F5;
+}
+
+page-registeragent .button-md {
+  text-transform: none;
+  border-radius: 20px;
+  font-size: 15px;
+  width: 50%;
+  display: block;
+  margin:10px auto;
+  height: 40px;
+  background: #7965ff;
+}
+
+page-registeragent .list-md {
+  background: #fff;
+  border-radius: 10px;
+}
+
+page-registeragent .item-md {
+  background: transparent;
+}
+
+page-registeragent .list-md .item-input:last-child {
+    border-bottom: none;
+}
+
+page-registeragent .text-input-md {
+  margin:0;
+}
+
+page-registeragent .item.item-textarea {
+    padding-top: 30px;
+}
+
+page-registeragent .summary_package {
+  font-size: 15px;
+  text-align: left;
+}
+
+page-registeragent .summary_package span {
+  display: block;
+  text-align:right;
+}
+
+page-registeragent .summary_package ion-row {
+  border-bottom:1px solid #eeeeee;
+}
+
+page-registeragent .summary_package ion-row:last-child {
+  border:none;
+}

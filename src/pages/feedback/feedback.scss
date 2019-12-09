@@ -1,0 +1,60 @@
+page-feedback {
+  span {
+    color:#ff0000;
+  }
+}
+
+page-feedback ion-header p {
+  margin-top: 0;
+  color: #fff;
+}
+
+page-feedback ion-header .toolbar-title.toolbar-title-md {
+  color: #fff;
+}
+
+page-feedback .content.content-md {
+  background-color: #f6f6f6;
+}
+
+page-feedback ion-header {
+  background: #e11173;
+}
+
+page-feedback ion-header .toolbar-background-md {
+  background: #e11173 ;
+  color: #fff;
+}
+
+page-feedback .item-input .label-md,
+page-feedback .item-select .label-md,
+page-feedback .item-datetime .label-md {
+  color:#000;
+}
+
+page-feedback .send-feedback {
+  background: #ffba00;
+  text-transform: none;
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding: 20px 0;
+  margin: 0;
+  color: #3e2d01;
+}
+
+page-feedback #newsframe {
+  //set the height to 100% of the viewport less the height of the header
+  height: calc(100vh - 60px);
+
+  //set the width to 100% of the viewport width
+  width: 100vw;
+
+  //remove border, padding, margin
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.holds-the-iframe {
+  background:url('https://www.hemico4u.com/wp-content/uploads/2019/01/lg.dual-ring-loader.gif') center center no-repeat;
+ }

@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-navbar color="mymart">
+    <ion-toolbar>
+      <ion-title start>
+        <button ion-button menuToggle float-left class="mycategories">
+  			  <ion-icon name="menu"></ion-icon>
+  			</button>
+        <img src="assets/imgs/hemico-white.png" style="margin:0 auto; display:block; width:20%;" />
+      </ion-title>
+      <ion-buttons end>
+        <button ion-button icon-only (click)="notificationList()">
+          <ion-icon name="md-notifications" style="font-size: 25px"></ion-icon>
+          <!--<ion-badge color="danger" item-end>10</ion-badge>-->
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="home-content">
+  <h5>Welcome {{ profile?.USERID }}!</h5>
+  <h6>{{ profile?.AGENTID }}</h6>
+  <!-- <button ion-button small color="light" menuClose (click)="open('UserprofilePage')" class="profile_btn">View Profile</button> -->
+  <ion-grid padding class="home-menu">
+    <button ion-button (click)="open('RegisteragentPage')">Register Agent</button>
+
+    <ion-row>
+
+      <ion-col col-6>
+        <ion-card (click)="open('MyworkplacePage')">
+          <ion-card-header>
+            <img src="assets/imgs/desk.png" style="margin:0 auto; display:block; width:50%;" />
+          </ion-card-header>
+          <ion-card-content>
+            MyWork Place
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col col-6>
+        <ion-card (click)="open('ProductlistPage')">
+          <ion-card-header>
+            <img src="assets/imgs/iconfinder_box_49364.png" style="margin:0 auto; display:block; width:50%;" />
+          </ion-card-header>
+          <ion-card-content>
+            Products
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col col-6>
+        <ion-card (click)="open('MarketingplanPage')">
+          <ion-card-header>
+            <img src="assets/imgs/iconfinder_presentation_2799203.png" style="margin:0 auto; display:block; width:50%;" />
+          </ion-card-header>
+          <ion-card-content>
+            Marketing Plan
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col col-6>
+        <ion-card (click)="open('FeedbackPage')">
+          <ion-card-header>
+            <img src="assets/imgs/iconfinder_ilustracoes_04-12_1519782.png" style="margin:0 auto; display:block; width:50%;" />
+          </ion-card-header>
+          <ion-card-content>
+            Feedback
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+  <!-- <ion-grid padding>
+    <ion-row>
+        <ion-col col-12>
+          <button ion-button small color="light" block (click)="logout()">Log Out</button>
+        </ion-col>
+    </ion-row>
+  </ion-grid> -->
+</ion-content>

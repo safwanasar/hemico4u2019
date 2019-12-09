@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "847269229484",
+    "firebase_url": "https://hemico-app-98c3a.firebaseio.com",
+    "project_id": "hemico-app-98c3a",
+    "storage_bucket": "hemico-app-98c3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847269229484:android:7b338247b3ac6eb9",
+        "android_client_info": {
+          "package_name": "io.hemico.agent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847269229484-r2jqqfg9bnve9tb3f9qa98uni8p6h95o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpM0winU0YUzVoZ-0ywKrZ3_lQEBBz_x8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847269229484-r2jqqfg9bnve9tb3f9qa98uni8p6h95o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,32 @@
+page-notifications {
+
+}
+
+page-notifications ion-header .toolbar-background-md {
+  background: #e11173;
+  color: #fff;
+}
+
+page-notifications ion-header.header.header-md .toolbar-title-md {
+  color: #fff;
+  font-size: 1.8rem;
+  text-transform: none;
+  font-weight: normal;
+  margin:0;
+}
+
+page-notifications .content-md {
+background-color: #f6f6f6 !important;
+}
+
+page-notifications .toolbar-title.toolbar-title-md{
+  color: #e11173;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+page-notifications ion-label {
+    white-space: inherit;
+}

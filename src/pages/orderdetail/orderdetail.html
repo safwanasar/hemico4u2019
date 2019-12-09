@@ -1,0 +1,79 @@
+<!--
+  Generated template for the OrderdetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Order Details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div *ngIf="order">
+    <ion-list>
+      <ion-title>Your Order Details</ion-title>
+      <ion-item text-center class="main-details">
+        <h3>Order ID:</h3>
+        <h1>{{orderID}}</h1>
+        <ion-badge color="secondary">{{order.ORDER_STATUS}}</ion-badge>
+      </ion-item>
+    </ion-list>
+    <ion-title>Sender Details</ion-title>
+    <ion-list class="no-bg">
+      <ion-item>
+        <ion-icon name="person" item-start></ion-icon>
+          [WIP] Ahmad Safwan b Abd Rahman
+      </ion-item>
+      <ion-item>
+        <ion-icon name="pin" item-start></ion-icon>
+          [WIP] Lot 83, Taman Rahmat, 06000 Jitra, Kedah Darul Aman.
+      </ion-item>
+      <ion-item>
+        <ion-icon name="call" item-start></ion-icon>
+          [WIP] +6017-2492669
+      </ion-item>
+    </ion-list>
+    <ion-title>Receiver Details</ion-title>
+    <ion-list class="no-bg">
+      <ion-item>
+        <ion-icon name="person" item-start></ion-icon>
+          {{order.SHIPPING_ADDRESS.RECIPIENT}}
+      </ion-item>
+      <ion-item>
+        <ion-icon name="pin" item-start></ion-icon>
+          {{order.SHIPPING_ADDRESS.ADDRESS_1}}
+      </ion-item>
+      <ion-item>
+        <ion-icon name="call" item-start></ion-icon>
+          {{order.SHIPPING_ADDRESS.CONTACT}}
+      </ion-item>
+    </ion-list>
+    <ion-title>Item Details</ion-title>
+    <ion-list class="no-bg">
+      <ion-item *ngFor="let item of order.ORDERITEMS">
+          {{item.NAME}} X {{item.QTY}}
+          <ion-note text-right item-end>
+            <span>RM{{item.QTY * item.PRICE | number: '1.2'}}</span>
+          </ion-note>
+      </ion-item>
+      <ion-item>
+          Delivery Charges
+          <ion-note text-right item-end>
+            <span>RM{{order.DELIVERY_CHARGES | number: '1.2'}}</span>
+          </ion-note>
+      </ion-item>
+      <hr>
+      <ion-item>
+          Total
+          <ion-note text-right item-end>
+            <span class="price">RM{{order.ORDER_AMOUNT | number: '1.2'}}</span>
+          </ion-note>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

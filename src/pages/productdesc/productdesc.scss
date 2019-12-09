@@ -1,0 +1,115 @@
+page-productdesc {
+
+}
+
+page-productdesc .toolbar-background-md {
+  background: #cc0000 ;
+  color: #fff;
+}
+
+page-productdesc .toolbar-title-md {
+  color: #fff;
+}
+
+page-productdesc ion-slides {
+    height: auto;
+}
+
+page-productdesc .bar-button-md[icon-only] ion-icon {
+  margin: 0;
+  color:#fff;
+}
+
+page-productdesc .product-title-summary .price span{
+  display:block;
+  margin-bottom: 5px;
+}
+
+page-productdesc .product-title-summary .price span.discount {
+  text-decoration: line-through;
+  color: #ccc;
+  font-size: 1.5rem;
+}
+
+page-productdesc .product-title-summary .price span.final-price {
+  color: #cc0000;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+page-productdesc .product-title-summary .price span.save-percentage {
+  background: #6fd1fd;
+  color: #fff;
+  display: inline;
+  float: right;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 3px 12px;
+}
+
+page-productdesc .product-title-summary .rating{
+  color:#ffbb58;
+  font-size: 1.7rem;
+}
+
+page-productdesc .product-title-summary .review {
+  font-size: 1.7rem;
+  color: #000;
+}
+
+page-productdesc .product-title-summary .chip-md {
+  background: #fff3a6;
+  color: #9b4900;
+  margin-top: 20px;
+}
+
+page-productdesc .segment-md .segment-button.activated,
+page-productdesc .segment-md .segment-button.segment-activated {
+  border-color: #cc0000;
+}
+
+page-productdesc .segment-md .segment-button {
+  color: #cc0000;
+  text-transform: none;
+  font-size: 1.5rem;
+}
+
+page-productdesc .footer-md .toolbar-background-md {
+  background: #ff7200;
+}
+
+page-productdesc .toolbar-md {
+  padding:0px;
+}
+
+page-productdesc .button-full-md {
+  box-shadow: none !important;
+  margin: 0;
+  padding: 30px 0;
+  background: #ff7200;
+  color: #fff;
+  text-transform: none;
+  font-weight: normal;
+  font-size: 1.7rem;
+}
+
+page-productdesc .item-md.item-block .item-inner {
+  border:none;
+}
+
+page-productdesc .related-product h3 {
+  font-size: 1.5rem;
+}
+
+page-productdesc .related-product .price {
+  color:#cc0000;
+}
+
+page-productdesc .related-product .rating {
+  color: #ffbb58;
+  margin-top:10px;
+}
+
+page-productdesc .scroll-content {
+  background-color: #fff;
+}

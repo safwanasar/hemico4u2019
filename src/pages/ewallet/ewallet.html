@@ -1,0 +1,60 @@
+<!--
+  Generated template for the EwalletPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>eWallet</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="income-summary" padding>
+    <h6>eWallet Balance</h6>
+    <h1>RM {{ totalCount }}</h1>
+  </div>
+
+  <div class="list-title" padding>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 text-left>
+          <span>Statement</span>
+        </ion-col>
+        <ion-col col-3 text-right>
+          <span>Credit (RM)</span>
+        </ion-col>
+        <ion-col col-3 text-right>
+          <span>Debit (RM)</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <!-- /list-title -->
+  <div class="month-list" padding>
+    <ion-grid>
+
+      <ion-row *ngFor="let eWalletlist of eWalletlists">
+        <ion-col col-6 text-left>
+          <span>{{ eWalletlist?.Description }}</span>
+          <span class="date">{{ eWalletlist?.Date }}</span>
+        </ion-col>
+        <ion-col col-3 text-right class="credit">
+          <span>{{ eWalletlist?.Credit }}</span>
+        </ion-col>
+        <ion-col col-3 text-right class="debit">
+          <span>{{ eWalletlist?.Debit }}</span>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12 text-center>
+          <button ion-button (click)="openWithSystemBrowser('https://agent.hemico4u.com')" color="light">See Detail Reports</button>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </div>
+  <img class="trans_logo" src="assets/imgs/hemico-watermark.png" />
+</ion-content>

@@ -1,0 +1,96 @@
+page-myaccount {
+
+}
+
+page-myaccount  ion-avatar ion-img, page-myaccount ion-avatar img {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 30%;
+    height:30%;
+    margin: 0 auto;
+}
+
+page-myaccount ion-header {
+  z-index: 1;
+}
+
+page-myaccount ion-header .toolbar-title-md {
+  color: #fff;
+}
+
+page-myaccount ion-header {
+  background: #cc0000;
+  color: #fff;
+  padding-bottom: 30px;
+}
+
+page-myaccount ion-header .toolbar-background-md {
+  background: #cc0000 ;
+  color: #fff;
+}
+
+page-myaccount .content.content-md {
+  background-color: #f6f6f6;
+}
+
+page-myaccount .float-content {
+  background-color: #fff;
+  z-index: 12;
+  padding-top:10px;
+  border-radius: 10px;
+  margin-top: 0;
+  margin-bottom:20px;
+}
+
+page-myaccount .float-content h3 {
+  color: #cc0000;
+  font-size: 2.5rem;
+}
+
+page-myaccount .float-content p {
+  margin-top:0;
+}
+
+page-myaccount .order-btn {
+  background-color: #ff7200;
+  text-transform: none;
+  padding-top:20px;
+  padding-bottom: 20px;
+  border-radius: 3px;
+  font-weight: normal;
+  font-size:1.5rem;
+  margin-bottom: 20px;
+}
+
+page-myaccount .content.content-md ion-title .toolbar-title-md {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #cc0000;
+}
+
+
+page-myaccount .potential {
+  margin-top:30px;
+}
+
+page-myaccount .potential h2 {
+  color: #10c971;
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+page-myaccount .potential p {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+page-myaccount .earning {
+  margin-top:30px;
+}
+
+page-myaccount .earning h3 {
+  color:#cc0000;
+  text-align: 1.5rem;
+  font-weight: normal;
+}

@@ -1,0 +1,54 @@
+page-groupsales .toolbar-background-md,
+page-groupsales .header-ios .toolbar-ios:last-child .toolbar-background-ios {
+  background-color: #33cdcd;
+}
+
+page-groupsales .toolbar-title-md {
+    color: #fff;
+}
+
+page-groupsales .income-summary {
+  background-color: #33cdcd;
+  text-align: center;
+  color:#c5ffff;
+  font-weight: normal;
+}
+
+page-groupsales .income-summary h1 {
+  color:#004c46;
+  margin-top: .5rem;
+  font-size: 3rem;
+}
+
+page-groupsales .income-summary span {
+  color:#fd8bbf;
+}
+
+page-groupsales .income-summary h5 {
+  margin-top:5px;
+  font-weight: normal;
+  margin-bottom:0;
+}
+
+page-groupsales .list-title {
+  background-color: #d7ffff;
+  color: #09625e;
+  padding-top:0 !important;
+  padding-bottom:0 !important;
+}
+
+page-groupsales .month-list ion-row {
+  margin-bottom:20px;
+  font-size: 1.5rem;
+}
+
+page-groupsales img.trans_logo {
+  position: absolute;
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px; /* Half the height */
+  margin-left: -200px; /* Half the width */
+}

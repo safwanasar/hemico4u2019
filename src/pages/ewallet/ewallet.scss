@@ -1,0 +1,73 @@
+page-ewallet .toolbar-background-md,
+page-ewallet .header-ios .toolbar-ios:last-child .toolbar-background-ios {
+  background-color: #800080;
+}
+
+page-ewallet .toolbar-title-md {
+    color: #fff;
+}
+
+page-ewallet .income-summary {
+  background-color: #800080;
+  text-align: center;
+  color:#fff;
+  font-weight: normal;
+}
+
+page-ewallet .income-summary h1 {
+  color:#fff;
+  margin-top: .5rem;
+  font-size: 3rem;
+}
+
+page-ewallet .income-summary span {
+  color:#fd8bbf;
+}
+
+page-ewallet .income-summary h5 {
+  margin-top:5px;
+  font-weight: normal;
+  margin-bottom:0;
+}
+
+page-ewallet .list-title {
+  background-color: #D8BFD8;
+  color: #4B0082;
+  padding-top:0 !important;
+  padding-bottom:0 !important;
+}
+
+page-ewallet .date {
+  display: block;
+  color:#848484;
+}
+
+page-ewallet .month-list .row {
+  border-bottom: 1px dotted #ccc;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+page-ewallet .credit {
+  color:#008000;
+}
+
+page-ewallet .debit {
+  color:#ff0000;
+}
+
+page-ewallet .month-list ion-row {
+  margin-bottom:20px;
+  font-size: 1.5rem;
+}
+
+page-ewallet img.trans_logo {
+  position: fixed;
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px; /* Half the height */
+  margin-left: -200px; /* Half the width */
+}

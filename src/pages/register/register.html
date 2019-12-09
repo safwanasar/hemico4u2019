@@ -1,0 +1,163 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="signup" class="signupNav">
+    <ion-title>Sign Up</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-row>
+    <ion-col class="titleSignup">
+      Sign Up
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="alreadyAccount">
+      Already have an account? <a href="JavaScript:void(0);" (click)="loginCall()">Login here.</a>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="description">
+      Why join MyMerchant Mall? Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Vestibulum digniss im enim vitae odio euismod, sit amet pharetra diam condim entum
+    </ion-col>
+  </ion-row>
+  <form (ngSubmit)="register()" #registerForm="ngForm">
+      <ion-row>
+        <ion-col>
+          <ion-list inset>
+            <ion-item class="label_app">
+              Sponsor Username:
+            </ion-item>
+            <ion-item>
+              <ion-input type="text" placeholder="Sponsor Name" name="name" [(ngModel)]="registerCredentials.SPONSOR_USERID" required></ion-input>
+            </ion-item>
+            <ion-item class="label_app">
+              Name:
+            </ion-item>
+            <ion-item>
+              <ion-input type="text" placeholder="Name" name="NAME" [(ngModel)]="registerCredentials.NAME" required></ion-input>
+            </ion-item>
+            <ion-item class="label_app">
+              Username:
+            </ion-item>
+            <ion-item>
+              <ion-input type="text" placeholder="Username" name="NEW_USERID" [(ngModel)]="registerCredentials.NEW_USERID" required></ion-input>
+            </ion-item>
+            <ion-item class="label_app">
+              IC Number:
+            </ion-item>
+            <ion-item>
+              <ion-input type="number" placeholder="IC Number" name="IC_NO" [(ngModel)]="registerCredentials.IC_NO" required></ion-input>
+            </ion-item>
+            <ion-item class="label_app">
+              IC Type:
+            </ion-item>
+            <ion-item no-padding>
+              <ion-select name="IC_TYPE" placeholder="Choose IC Type" style="max-width: 100%;width: 100%" [(ngModel)]="registerCredentials.IC_TYPE">
+                <ion-option value="N">
+                  New IC
+                </ion-option>
+                <ion-option value="O">
+                  Old IC
+                </ion-option>
+                <ion-option value="P">
+                  Police IC
+                </ion-option>
+                <ion-option value="A">
+                  Army IC
+                </ion-option>
+                <ion-option value="T">
+                  Passport
+                </ion-option>
+                <ion-option value="C">
+                  Co Reg
+                </ion-option>
+              </ion-select>
+            </ion-item>
+            <ion-item class="label_app">
+            Phone Number:
+            </ion-item>
+            <ion-item>
+              <ion-input type="number" placeholder="Phone Number" name="TEL_MOBILE" [(ngModel)]="registerCredentials.TEL_MOBILE" required></ion-input>
+            </ion-item>
+            <ion-item class="label_app">
+            Address Line 1:
+            </ion-item>
+            <ion-item>
+              <ion-input type="text" placeholder="Address line 1" name="address1" [(ngModel)]="registerCredentials.ADDRESS1" required></ion-input>
+            </ion-item>
+            <ion-item class="label_app">
+            Address Line 2:
+            </ion-item>
+            <ion-item>
+              <ion-input type="text" placeholder="Address line 2" name="address2" [(ngModel)]="registerCredentials.ADDRESS2" required></ion-input>
+            </ion-item>
+            <ion-item class="label_app">
+            Postal Code:
+            </ion-item>
+            <ion-item>
+              <ion-input type="number" placeholder="Postcode" name="postcode" [(ngModel)]="registerCredentials.POSTCODE" required></ion-input>
+            </ion-item>
+            <ion-item class="label_app">
+            City:
+            </ion-item>
+            <ion-item>
+              <ion-input type="text" placeholder="City" name="city" [(ngModel)]="registerCredentials.CITY" required></ion-input>
+            </ion-item>
+            <ion-item class="label_app">
+            Country:
+            </ion-item>
+            <ion-item no-padding>
+              <ion-select name="country_code" [(ngModel)]="registerCredentials.COUNTRY_CODE" placeholder="Select your country" style="max-width: 100%;width: 100%">
+                <ion-option *ngFor="let country of countries" [value]="country.code"> {{country.region}} </ion-option>
+              </ion-select>
+            </ion-item>
+            <ion-item class="label_app">
+            State:
+            </ion-item>
+            <ion-item>
+              <ion-input type="text" placeholder="State" name="state" [(ngModel)]="registerCredentials.STATE" required></ion-input>
+            </ion-item>
+            <ion-item class="label_app">
+            Email:
+            </ion-item>
+            <ion-item>
+              <ion-input type="email" placeholder="Email" name="email" [(ngModel)]="registerCredentials.EMAILID" required></ion-input>
+            </ion-item>
+            <ion-item class="label_app">
+            Password:
+            </ion-item>
+            <ion-item>
+              <ion-input type="password" placeholder="Password" name="PASSWORD" [(ngModel)]="registerCredentials.PASSWORD" required></ion-input>
+            </ion-item>
+            <ion-item class="label_app">
+            Confirm Password:
+            </ion-item>
+            <ion-item>
+              <ion-input type="password" placeholder="Confirm Password" name="confirmation_password" [(ngModel)]="registerCredentials.confirmation_password" required></ion-input>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="signup-col">
+          <button ion-button class="submit-btn" full type="submit" [disabled]="!registerForm.form.valid">Create My Account</button>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row class="are-merchant-signup">
+        Are you a Merchant? <a href="javascript:void(0);">Click here</a>
+      </ion-row>
+
+    </form>
+</ion-content>

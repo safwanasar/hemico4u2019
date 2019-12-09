@@ -1,0 +1,60 @@
+page-merchantorderlist {
+
+}
+
+page-merchantorderlist .toolbar-background-md {
+  background: #790075 ;
+  color: #fff;
+}
+
+page-merchantorderlist .toolbar-title-md {
+  color: #fff;
+}
+
+
+page-merchantorderlist .content-md{
+  background-color: #f6f6f6;
+  color: #000;
+}
+
+.col {
+  white-space: initial;
+}
+
+page-merchantorderlist .list-header-md {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+page-merchantorderlist ion-list-header.item.item-md.list-header.list-header-md {
+  background-color: transparent !important;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+page-merchantorderlist .content-md p {
+  line-height: 20px;
+}
+
+page-merchantorderlist .segment-md .segment-button {
+  color: #fcb7fa;
+  text-transform: none;
+  font-size: 1.5rem;
+}
+
+page-merchantorderlist .segment-md .segment-button.activated,
+page-merchantorderlist .segment-md .segment-button.segment-activated {
+  color: #fff;
+  border-color: #fff;
+}
+
+page-merchantorderlist .pos_btn {
+  background-color: #790075;
+  text-transform: none;
+}
+
+page-merchantorderlist .del_btn {
+  background-color: #f0f0f0;
+  color: #949494;
+}

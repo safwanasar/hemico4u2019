@@ -1,0 +1,68 @@
+page-orderdetail {
+
+}
+
+page-orderdetail .toolbar-background-md {
+  background: #cc0000 ;
+  color: #fff;
+}
+
+page-orderdetail .toolbar-title-md {
+  color: #fff;
+}
+
+page-orderdetail .content-md {
+  background-color: #f6f6f6 !important;
+}
+
+page-orderdetail ion-item.main-details {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+}
+
+page-orderdetail ion-item.main-details h3 {
+  color: #cc0000;
+  font-size: 1.5rem;
+}
+
+page-orderdetail ion-item.main-details h1 {
+  font-size: 3rem;
+}
+
+page-orderdetail .no-bg .item-md {
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+
+page-orderdetail .item > ion-icon, page-orderdetail .item-inner > ion-icon {
+  font-size: 2rem;
+  min-height: 2rem;
+}
+
+page-orderdetail .item-md ion-icon[item-start] + .item-inner {
+  margin-left: 0;
+}
+
+page-orderdetail .list-md .item-block .item-inner {
+  border:none;
+}
+
+page-orderdetail ion-note span {
+  color:#000;
+}
+
+page-orderdetail ion-note span.price {
+  font-size:2rem;
+  font-weight: bold;
+}
+
+page-orderdetail .content-md ion-title .toolbar-title-md {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #909090;
+  letter-spacing: 1.2px;
+  font-weight: normal;
+  margin-top:20px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,46 @@
+page-producthemicocolor .toolbar-background-md {
+  background-color: #e11173;
+}
+
+page-producthemicocolor .toolbar-title-md {
+    color: #fff;
+}
+
+page-producthemicocolor ion-list h3 {
+  text-align: center;
+}
+
+page-producthemicocolor .pricing {
+  margin-bottom:30px;
+}
+
+
+page-producthemicocolor .pricing .divTable{
+	display: table;
+	width: 100%;
+}
+page-producthemicocolor .pricing .divTableRow {
+	display: table-row;
+}
+page-producthemicocolor .pricing .divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+page-producthemicocolor .pricing .divTableCell, .divTableHead {
+	border: 1px solid #999999;
+	display: table-cell;
+	padding: 3px 10px;
+}
+page-producthemicocolor .pricing .divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+page-producthemicocolor .pricing .divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+page-producthemicocolor .pricing .divTableBody {
+	display: table-row-group;
+}

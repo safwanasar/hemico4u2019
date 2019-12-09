@@ -1,0 +1,185 @@
+<!--
+  Generated template for the CheckoutPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar no-border-bottom>
+    <ion-title>Checkout</ion-title>
+  </ion-navbar>
+
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="checkout">
+      <ion-segment-button value="shipping">
+        Shipping
+      </ion-segment-button>
+      <ion-segment-button value="payment">
+        Payment
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <div [ngSwitch]="checkout">
+    <ion-list *ngSwitchCase="'shipping'">
+      <ion-item>
+        Choose Address
+      </ion-item>
+
+      <ion-card>
+        <ion-list radio-group>
+          <ion-item>
+            <ion-label>No. 83 Taman Rahmat, 06000 Jitra, Kedah</ion-label>
+            <ion-radio checked="true" value="1"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>No. 83 Taman Rahmat, 06000 Jitra, Kedah</ion-label>
+            <ion-radio value="2"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>No. 83 Taman Rahmat, 06000 Jitra, Kedah</ion-label>
+            <ion-radio value="3"></ion-radio>
+          </ion-item>
+        </ion-list>
+
+        <button ion-button color="light" full class="add-address">Add New Shipping Address</button>
+
+      </ion-card>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'payment'" class="payment">
+
+        <ion-list-header>
+          Order Review
+        </ion-list-header>
+        <ion-item>
+          <ion-grid>
+            <ion-row>
+              <ion-col col-2><img src="assets/imgs/item-thumb.jpg" style="display:block;"/></ion-col>
+              <ion-col col-7>Hemico Ageless Beauty Soap (1)</ion-col>
+              <ion-col col-3 text-right>
+                <span class="price">Price</span>
+                RM22.50
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+        <ion-item>
+          <ion-grid>
+            <ion-row>
+              <ion-col col-2><img src="assets/imgs/item-thumb.jpg" style="display:block;"/></ion-col>
+              <ion-col col-7>Hemico Ageless Beauty Soap (1)</ion-col>
+              <ion-col col-3 text-right>
+                <span class="price">Price</span>
+                RM22.50
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+
+        <ion-list-header>
+          Personal Information
+        </ion-list-header>
+        <ion-item>
+          <ion-grid>
+            <ion-row>
+              <ion-col col-12>
+                <ion-list>
+                  <ion-item>
+                    <p>Recipient Name</p>
+                    <h2>Ahmad Safwan Abd Rahman</h2>
+                  </ion-item>
+                </ion-list>
+                <ion-list>
+                  <ion-item>
+                    <p>Contact No.</p>
+                    <h2>+6017-249 2669</h2>
+                  </ion-item>
+                </ion-list>
+                <ion-list>
+                  <ion-item>
+                    <p>Email Address:</p>
+                    <h2>ids.safwan@gmail.com</h2>
+                  </ion-item>
+                </ion-list>
+                <ion-list>
+                  <ion-item>
+                    <p>Deliver to:</p>
+                    <h2>Lot 83, Taman Rahmat, 06000 Jitra, Kedah</h2>
+                  </ion-item>
+                </ion-list>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+
+        <ion-list-header>
+          Payment Method
+        </ion-list-header>
+        <ion-list radio-group>
+          <ion-item class="select-payment">
+            <ion-label><img src="assets/imgs/fpx-icon.jpg" style="display:block;"/>
+              Online Internet Banking
+            </ion-label>
+            <ion-radio checked="true" value="4"></ion-radio>
+          </ion-item>
+
+          <ion-item class="select-payment">
+            <ion-label><img src="assets/imgs/coin-icon.jpg" class="small-ico" style="display:block;"/>MyMerchantMall Coins</ion-label>
+            <ion-radio value="5"></ion-radio>
+          </ion-item>
+
+          <ion-item class="select-payment">
+            <ion-label><img src="assets/imgs/wallet-icon.jpg" class="small-ico" style="display:block;"/>Hemico E-Wallet</ion-label>
+            <ion-radio value="6"></ion-radio>
+          </ion-item>
+        </ion-list>
+
+        <ion-list-header>
+          Total Price
+        </ion-list-header>
+        <ion-item class="total-price">
+          <ion-grid>
+            <ion-row>
+              <ion-col col-6 text-left>
+                <span>Sub total member Price</span>
+                RM81.00
+              </ion-col>
+              <ion-col col-6 text-right>
+                <span>Delivery Charges</span>
+                RM7.00
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+
+    </ion-list>
+
+
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <div class="order-summary">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-12 text-left>
+            <span class="txt">Review your information carefully to make sure everything is correct before proceed.</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div>
+      <button ion-button icon-end full class="checkout">Continue to Payment <ion-icon name="arrow-round-forward"></ion-icon></button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

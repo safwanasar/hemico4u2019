@@ -1,0 +1,130 @@
+<!--
+  Generated template for the ProductdescPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar class="header_bg">
+    <ion-title *ngIf="product">
+      {{product.NAME}}
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button icon-only>
+        <ion-icon name="share"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="cart"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-slides pager *ngIf="product">
+
+    <ion-slide *ngFor="let img of product.IMG.PICTURES">
+      <img src="{{img.PATH}}" />
+    </ion-slide>
+
+  </ion-slides>
+  <ion-grid class="product-title-summary">
+    <ion-row *ngIf="product">
+      <ion-col col-7>
+        <h1>{{product.NAME}}</h1>
+        <div float-left class="rating">
+          {{product.RATE}} <ion-icon name="star"></ion-icon>
+        </div>
+        <div float-right class="review">
+          15 Reviews >
+        </div>
+        <ion-chip>
+          <ion-label class="earn-points">{{product.POINTS.POINTS_NOLOGIN}}</ion-label>
+        </ion-chip>
+      </ion-col>
+      <ion-col col-5 class="price">
+        <span text-right class="discount">
+          RM{{product.ORI_PRICE}}
+        </span>
+        <span text-right class="final-price">
+          RM{{product.SELLING_PRICE}}
+        </span>
+        <span text-right class="save-percentage">
+          Save {{product.DISCOUNT_PERCENTAGE}}
+        </span>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid class="product-description" *ngIf="product">
+    <ion-row>
+      <ion-col col-12>
+        <ion-segment [(ngModel)]="segment">
+          <ion-segment-button value="description">
+            Description
+          </ion-segment-button>
+          <ion-segment-button value="seller">
+            Seller
+          </ion-segment-button>
+        </ion-segment>
+      </ion-col>
+    </ion-row>
+    <ion-row [ngSwitch]="segment">
+      <ion-col *ngSwitchCase="'description'" [innerHtml]="product.SHORT_DESC">
+      </ion-col>
+      <ion-col *ngSwitchCase="'seller'">
+        <ng-container *ngIf="merchant">
+          <ul>
+            <li *ngIf="merchant.SELLER_NAME">Name: <div padding [innerHtml]="merchant.SELLER_NAME"></div>
+            </li>
+            <li *ngIf="merchant.SELLER_ADDRESS">Address: <div padding [innerHtml]="merchant.SELLER_ADDRESS"></div>
+            </li>
+            <li *ngIf="merchant.SELLER_PROFILE">Profile: <div padding [innerHtml]="merchant.SELLER_PROFILE"></div>
+            </li>
+            <li *ngIf="merchant.SELLER_EMAIL">Email: <div padding [innerHtml]="merchant.SELLER_EMAIL"></div>
+            </li>
+            <li *ngIf="merchant.SELLER_MOBILE">Mobile: <div padding [innerHtml]="merchant.SELLER_MOBILE"></div>
+            </li>
+            <li *ngIf="merchant.SELLER_LOCATION">Location: <div padding [innerHtml]="merchant.SELLER_LOCATION"></div>
+            </li>
+            <li *ngIf="merchant.EMBEDED_MAP">Embeded Map: <div padding [innerHtml]="merchant.EMBEDED_MAP"></div>
+            </li>
+            <li *ngIf="merchant.LARGE_MAP">Large Map: <div padding [innerHtml]="merchant.LARGE_MAP"></div>
+            </li>
+          </ul>
+        </ng-container>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-item>
+    Related Products
+  </ion-item>
+  <ion-grid class="related-product">
+    <ion-row>
+      <ion-col col-4 *ngFor="let relatedCategory of relatedCategories">
+        <img src="{{relatedCategory.IMG}}" (click)="chooserelatedCategory(relatedCategory.CODE)" />
+        <h5>{{relatedCategory.NAME}}</h5>
+        <div class="price" float-left>
+          RM{{relatedCategory.SELLING_PRICE}}
+        </div>
+        <div class="rating" float-right>
+          {{relatedCategory.RATE}} <ion-icon name="md-star"></ion-icon>
+        </div>
+      </ion-col>
+      <ion-col *ngIf="!relatedCategories.length">
+        Loading...
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <button ion-button icon-end color="light" full>Add to Cart <ion-icon name="arrow-round-forward"></ion-icon></button>
+  </ion-toolbar>
+</ion-footer>

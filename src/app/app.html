@@ -1,0 +1,29 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <img src="{{ profile?.PROFILEPIC }}" style="width: 80px; height: 80px;float:left;" />
+       <ion-title><span>Name:</span>{{ profile?.NAME }}</ion-title>
+        <div class="top_btn">
+          <button ion-button small color="danger" menuClose (click)="open('UserprofilePage')">View Profile</button>
+        </div>
+      <hr>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <ion-item  menuClose (click)="open('MyworkplacePage')"><ion-icon name="briefcase"></ion-icon> &nbsp; My WorkPlace</ion-item>
+      <ion-item  menuClose (click)="open('ProductlistPage')"><ion-icon name="cube"></ion-icon> &nbsp; Products</ion-item>
+      <ion-item  menuClose (click)="open('MarketingplanPage')"><ion-icon name="easel"></ion-icon> &nbsp; Marketing Plan</ion-item>
+      <ion-item  menuClose (click)="open('FeedbackPage')"><ion-icon name="send"></ion-icon> &nbsp; Feedback</ion-item>
+    </ion-list>
+    <div class="button-bottom">
+      <button menuClose ion-item (click)="logout()">
+        Logout
+      </button>
+    </div><!-- /button-bottom -->
+  </ion-content>
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

@@ -1,0 +1,51 @@
+page-bonuslist .toolbar-background-md {
+  background-color: #e11173;
+}
+
+page-bonuslist .toolbar-title-md {
+    color: #fff;
+}
+
+page-bonuslist .income-summary {
+  background-color: #e11173;
+  text-align: center;
+  color:#fff;
+  font-weight: normal;
+}
+
+page-bonuslist .income-summary h1 {
+  color:#f4ff84;
+  margin-top: 1rem;
+}
+
+page-bonuslist .income-summary span {
+  color:#fd8bbf;
+}
+
+page-bonuslist .income-summary h5 {
+  margin-top:5px;
+  font-weight: normal;
+  margin-bottom:0;
+}
+
+page-bonuslist .list-title {
+  background-color: #f9e8f2;
+  color: #d996b7;
+  padding-top:0 !important;
+  padding-bottom:0 !important;
+}
+
+page-bonuslist .month-list ion-row {
+  margin-bottom:20px;
+}
+
+page-bonuslist img.trans_logo {
+  position: absolute;
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px; /* Half the height */
+  margin-left: -200px; /* Half the width */
+}

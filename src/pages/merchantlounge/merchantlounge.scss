@@ -1,0 +1,123 @@
+page-merchantlounge {
+
+}
+
+page-merchantlounge .toolbar-background-md {
+  background: #790075 ;
+  color: #fff;
+}
+
+page-merchantlounge .toolbar-title-md {
+  color: #fff;
+}
+
+page-merchantlounge .head-merchant {
+  background-color: #790075;
+  color: #fff;
+}
+
+page-merchantlounge ion-slides {
+  margin-top: 20px;
+}
+
+page-merchantlounge .head-merchant p {
+  font-size: 1rem;
+  color: #ffa5fc;
+}
+
+page-merchantlounge .slide-base {
+  border-radius: 5px;
+  border-left: 4px;
+  border-width: 10px;
+  background-color: #b660cf;
+  padding: 20px;
+  color:#fff;
+}
+
+page-merchantlounge .slide-base ion-icon {
+  font-size: 7rem;
+}
+
+page-merchantlounge .slide-base h5 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin:0;
+  padding: 0;
+  letter-spacing: 1.5px;
+  margin-bottom: 5px
+}
+
+page-merchantlounge .slide-base h3 {
+  font-size: 3rem;
+  margin-top: 10px;
+}
+
+page-merchantlounge .slide-base p {
+  margin: 0;
+  padding: 0;
+  color: #f7b1f4;
+  font-size: 1.5rem
+}
+
+page-merchantlounge .slide-base.total {
+  background-color: #a9d790;
+}
+
+page-merchantlounge .slide-base.total p {
+  color: #d7ffc1;
+}
+
+page-merchantlounge .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+page-merchantlounge .order-list {
+  background-color: #ffd200;
+  text-transform: none;
+  color: #544500;
+  margin-top: 20px;
+  font-weight: normal;
+  padding-top:20px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+page-merchantlounge .content-md{
+  background-color: #f6f6f6;
+  color: #000;
+}
+
+page-merchantlounge .merchant-content {
+  margin-top: 10px;
+}
+
+page-merchantlounge .merchant-content .toolbar-title-md {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+page-merchantlounge .merchant-content .wallet-balance {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top:15px;
+}
+
+page-merchantlounge .merchant-content .wallet-balance p,
+page-merchantlounge .merchant-content .wallet-balance h3 {
+  margin: 0;
+  line-height: 25px;
+}
+
+page-merchantlounge .merchant-content .wallet-balance p {
+  font-size: 1.5rem;
+}
+
+
+page-merchantlounge .merchant-content .wallet-balance ion-icon {
+  font-size: 5rem;
+  color: #790075;
+}

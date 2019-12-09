@@ -1,0 +1,46 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!--<ion-header transparent>
+  <img src="assets/imgs/mymerchant.png" style="margin:50px auto; display:block;"/>
+  <ion-navbar>
+    <ion-row class="login-heading">Login</ion-row>
+    <ion-row class="login-link">
+      Do not have an account? <a href="JavaScript:void(0);" (click)="createAccount()"> Sign up here</a>.
+    </ion-row>
+  </ion-navbar>
+</ion-header> -->
+
+
+<ion-content padding>
+  <img src="assets/imgs/hemico-white.png" style="margin:50px auto; display:block;" />
+  <form (ngSubmit)="login()" #registerForm="ngForm">
+    <ion-row>
+      <ion-col>
+        <ion-list inset>
+          <ion-item class="label_app">
+            Username:
+          </ion-item>
+          <ion-item>
+            <ion-input type="text" placeholder="Enter username" name="USERID" [(ngModel)]="loginCredentials.USERID" required disabled="false"></ion-input>
+          </ion-item>
+          <ion-item class="label_app">
+            Password:
+          </ion-item>
+          <ion-item>
+            <ion-input type="password" placeholder="Enter password" name="PASSWORD" [(ngModel)]="loginCredentials.PASSWORD" required disabled="false"></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row class="login-button-container">
+      <ion-col>
+        <button ion-button class="submit-btn" full type="submit" [disabled]="!registerForm.form.valid">Login</button>
+      </ion-col>
+    </ion-row>
+
+  </form>
+</ion-content>

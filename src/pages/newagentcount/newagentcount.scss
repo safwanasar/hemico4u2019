@@ -1,0 +1,54 @@
+page-newagentcount .toolbar-background-md,
+page-newagentcount .header-ios .toolbar-ios:last-child .toolbar-background-ios {
+  background-color: #4752c5;
+}
+
+page-newagentcount .toolbar-title-md {
+    color: #fff;
+}
+
+page-newagentcount .income-summary {
+  background-color: #4752c5;
+  text-align: center;
+  color:#fff;
+  font-weight: normal;
+}
+
+page-newagentcount .income-summary h1 {
+  color:#f4ff84;
+  margin-top: .5rem;
+  font-size: 5rem;
+}
+
+page-newagentcount .income-summary span {
+  color:#fd8bbf;
+}
+
+page-newagentcount .income-summary h5 {
+  margin-top:5px;
+  font-weight: normal;
+  margin-bottom:0;
+}
+
+page-newagentcount .list-title {
+  background-color: #e7e9fe;
+  color: #4451b9;
+  padding-top:0 !important;
+  padding-bottom:0 !important;
+}
+
+page-newagentcount .month-list ion-row {
+  margin-bottom:20px;
+  font-size: 1.5rem;
+}
+
+page-newagentcount img.trans_logo {
+  position: absolute;
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px; /* Half the height */
+  margin-left: -200px; /* Half the width */
+}

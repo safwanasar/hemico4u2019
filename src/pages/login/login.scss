@@ -1,0 +1,87 @@
+page-login .scroll-content {
+background-color: #e11173;
+}
+
+page-login .input-wrapper,
+page-login .item-ios {
+  padding: 0;
+  margin: 0;
+}
+
+page-login .list-ios[inset] {
+  margin:10px;
+}
+
+page-login .list-ios[inset] .item {
+  border:none;
+}
+
+.text-input-ios {
+  background: #fff;
+  margin:0;
+  padding: 10px;
+  width: 100%;
+}
+
+page-login .content-md{
+  background: none;
+}
+
+page-login .label_app{
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  padding-left: 0px;
+  padding-top: 0;
+}
+
+page-login .login-heading{
+  color: #fff;
+  font-size: 3rem;
+  padding-left: 25px;
+}
+page-login .login-link{
+  color: #fff;
+  font-size: 1.6rem;
+  padding-left: 25px;
+}
+page-login .login-link a{
+  color: #fff;
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-weight: bold;
+  padding-left: 3px;
+}
+
+page-login .submit-btn{
+  background-color: #0ebb9f;
+  color: #fff;
+  font-size: 2rem;
+}
+page-login .submit-btn{
+  background-color: #0ebb9f !important;
+  text-transform: none;
+}
+page-login p.f_password a {
+  color: #fff;
+}
+page-login .login-button-container{
+  padding: 0px 15px;
+}
+page-login .are-merchant-signup{
+  padding: 25px 0px;
+  text-align: center;
+  display: block;
+  color: #FFF;
+  font-size: 1.6rem;
+}
+page-login .are-merchant-signup a{
+  color: #fff;
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-weight: bold;
+  padding-left: 3px;
+}
+
+
+page-login .header-md::after{background: none;}

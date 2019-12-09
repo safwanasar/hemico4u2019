@@ -1,0 +1,52 @@
+<!--
+  Generated template for the BonuslistPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Income</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="income-summary" padding>
+    <h6>Total Income</h6>
+    <h1>RM {{ totalIncome }}</h1>
+  </div>
+
+  <!-- /income-summary -->
+  <div class="list-title" padding>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 text-left>
+          <span>Month</span>
+        </ion-col>
+        <ion-col col-6 text-right>
+          <span>Amount (RM)</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <!-- /list-title -->
+  <div class="month-list" padding>
+    <ion-grid>
+
+      <ion-row *ngFor="let monthlyIncome of monthlyIncomes">
+        <ion-col col-6 text-left (click)="open('BonusdetailsPage', {PERIOD: monthlyIncome?.PERIOD, AMOUNT: monthlyIncome?.AMOUNT})">
+          <span style="text-decoration: underline">{{ monthlyIncome?.PERIOD }}</span>
+        </ion-col>
+        <ion-col col-6 text-right>
+          <span>{{ monthlyIncome?.AMOUNT }}</span>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </div>
+  <img class="trans_logo" src="assets/imgs/hemico-watermark.png" />
+</ion-content>

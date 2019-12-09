@@ -1,0 +1,25 @@
+page-orderlist {
+
+}
+
+page-orderlist .toolbar-background-md {
+  background: #cc0000 ;
+  color: #fff;
+}
+
+page-orderlist .toolbar-title-md {
+  color: #fff;
+}
+
+page-orderlist ion-note span {
+  display: block;
+  color:#3e8b00;
+}
+
+page-orderlist ion-note {
+  font-size: 1.4rem;
+}
+
+page-orderlist .item-md [item-left], page-orderlist .item-md [item-right], page-orderlist .item-md [item-start], page-orderlist .item-md [item-end] {
+  margin-top: 0;
+}

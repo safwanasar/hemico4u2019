@@ -1,0 +1,7 @@
+{
+  "name": "Hemico",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

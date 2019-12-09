@@ -1,0 +1,38 @@
+page-completed ion-content {
+  padding-top: 50px;
+  text-align: center;
+}
+
+page-completed h1 {
+  color: #1d9b00;
+  font-size: 3rem;
+  margin-top: 50px;
+}
+
+page-completed h3 {
+  color: #1d9b00;
+}
+
+page-completed h4 {
+  color: #9b9b9b;
+  font-weight: normal;
+}
+
+page-completed h2 {
+  font-size: 5rem;
+}
+
+page-completed .toolbar-md {
+  padding:0px;
+}
+
+page-completed .button-full-md {
+  box-shadow: none !important;
+  margin: 0;
+  padding: 30px 0;
+  background: #ff7200;
+  color: #fff;
+  text-transform: none;
+  font-weight: normal;
+  font-size: 1.7rem;
+}
